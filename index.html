@@ -5,21 +5,21 @@
 <base href="/marcor-scaffolding-dashboard-demo/">
 <!-- BASE:END -->
 
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <script src="https://cdn.tailwindcss.com"></script>
 
 
 <!-- SEO Meta Tags -->
-<title>MARCOR Guided Scaffolding Dashboard Demo</title>
-<meta name="description" content="A MARCOR-branded guided, non-interactive SaaS product preview that auto-cycles through scaffolding operations modules with only the CTA clickable." />
-<meta property="og:title" content="MARCOR Guided Scaffolding Dashboard Demo" />
-<meta property="og:description" content="A MARCOR-branded guided, non-interactive SaaS product preview that auto-cycles through scaffolding operations modules with only the CTA clickable." />
+<title>MARCOR Manual Scaffolding Dashboard Mockup</title>
+<meta name="description" content="A MARCOR-branded manual navigation mockup for a scaffolding operations dashboard showing realistic sample data across jobs, operatives, timesheets, plant, documents, inspections, photos, reports, and settings." />
+<meta property="og:title" content="MARCOR Manual Scaffolding Dashboard Mockup" />
+<meta property="og:description" content="A MARCOR-branded manual navigation mockup for a scaffolding operations dashboard showing realistic sample data across jobs, operatives, timesheets, plant, documents, inspections, photos, reports, and settings." />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="MARCOR Guided Scaffolding Dashboard Demo" />
-<meta name="twitter:description" content="A MARCOR-branded guided, non-interactive SaaS product preview that auto-cycles through scaffolding operations modules with only the CTA clickable." />
+<meta name="twitter:title" content="MARCOR Manual Scaffolding Dashboard Mockup" />
+<meta name="twitter:description" content="A MARCOR-branded manual navigation mockup for a scaffolding operations dashboard showing realistic sample data across jobs, operatives, timesheets, plant, documents, inspections, photos, reports, and settings." />
 <!-- End SEO Meta Tags -->
 <script data-lp-token-hydrate>
 (function(){try{
@@ -305,25 +305,35 @@
 </script>  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="demo-shell min-h-screen flex">
-<aside class="sidebar w-[280px] bg-[#06452f] text-white flex flex-col shadow-soft">
-  <div class="p-5 border-b border-white/10 flex items-center gap-3"><div class="h-14 w-14 rounded-xl bg-white text-[#06452f] grid place-items-center font-black text-2xl">M</div><div><div class="text-xs uppercase tracking-[.28em] text-yellow-200">MARCOR</div><div class="text-xl font-black">Ops Preview</div></div></div>
-  <nav id="sideNav" class="p-4 space-y-2 text-sm"></nav>
-  <div class="mt-auto p-5 border-t border-white/10 text-sm text-emerald-100/80">Guided product preview. Dashboard controls are intentionally display-only.</div>
-</aside>
-<main class="flex-1 min-w-0">
-<header class="sticky top-0 z-40 bg-[#06452f] text-white shadow-soft">
-  <div class="mobilebar hidden items-center justify-between px-4 py-3 border-b border-white/10"><div class="flex items-center gap-3"><div class="h-10 w-10 rounded-lg bg-white text-[#06452f] grid place-items-center font-black">M</div><b>MARCOR</b></div><span class="rounded-xl bg-white/10 px-4 py-2 font-bold">Guided Demo</span></div>
-  <div class="px-5 sm:px-8 py-5 flex flex-col lg:flex-row lg:items-center lg:justify-between toprow"><div><div class="text-xs uppercase tracking-[.28em] text-yellow-200">Guided Product Preview</div><h1 class="scene-title text-2xl sm:text-4xl font-black">Scaffolding Operations Dashboard</h1></div><div class="rounded-2xl bg-white/10 border border-white/10 px-4 py-3"><div class="text-xs text-emerald-100/80">Previewing module</div><div id="currentModuleTop" class="font-black text-yellow-200">Dashboard</div></div></div>
-</header>
-<div class="content p-5 sm:p-8 space-y-6">
-  <section id="kpiSection" class="grid6 grid gap-4"></section>
-  <section class="panel"><div class="panel-head"><div><span id="sceneTitle">Dashboard Overview</span><p id="sceneCaption" class="text-xs font-normal text-emerald-100/80 mt-1">The command center for active jobs, crews, sites, and work delivery.</p></div><span class="text-xs bg-white/10 rounded-full px-3 py-1">Auto-playing walkthrough</span></div><div id="sceneBody" class="p-5 sm:p-6 fade"></div></section>
-  <section class="panel"><div class="panel-head"><span>Quick Actions Preview</span><span class="text-xs bg-white/10 rounded-full px-3 py-1">Visible but locked</span></div><div id="quickActions" class="quickGrid grid gap-3 p-4"></div></section>
-  <section class="rounded-[28px] bg-[#06452f] text-white shadow-soft overflow-hidden cta-live"><div class="grid lg:grid-cols-[1.2fr_.8fr] gap-6 p-6 sm:p-8 lg:p-10 items-center"><div><div class="inline-flex rounded-full bg-yellow-300 text-[#06452f] px-4 py-2 text-xs font-black uppercase tracking-[.2em]">Build CTA</div><h2 class="mt-5 text-3xl sm:text-5xl font-black leading-tight">Want to Build this now?</h2><p class="mt-3 text-2xl font-black text-yellow-200">Build with confidence in Marcor.</p><p class="mt-4 max-w-3xl text-emerald-100 text-lg">Turn this static business dashboard concept into a working AI-powered operations system with client portals, CRM, job tracking, reminders, reports, and automations.</p><div class="mt-7 flex flex-wrap gap-3 items-center"><a href="https://studio.marcor.app" target="_blank" rel="noopener noreferrer" class="rounded-2xl bg-yellow-300 text-[#06452f] px-6 py-4 font-black hover:bg-yellow-200 transition shadow-soft">Build in Marcor</a><span class="text-sm text-emerald-100/80">This page is a guided graphical software concept. Dashboard functions shown above are preview-only.</span></div></div><div class="rounded-3xl bg-white/10 border border-white/10 p-5"><div class="text-sm uppercase tracking-[.2em] text-yellow-200 font-black">Preview cycle</div><div id="dots" class="mt-5 flex flex-wrap gap-3"></div><div class="mt-5 text-sm text-emerald-100/80">All dashboard buttons are display-only. The CTA is the only live link.</div></div></div></section>
-</div>
-<footer class="bg-[#06452f] text-white px-5 sm:px-8 py-5 border-t border-white/10 flex flex-col sm:flex-row gap-2 sm:justify-between text-sm"><span>MARCOR Guided Operations Dashboard Demo</span><span class="text-emerald-100/70">marcor.app</span></footer>
-</main>
+<div class="min-h-screen flex">
+  <aside class="sidebar w-[285px] shrink-0 bg-[#06452f] text-white flex flex-col shadow-soft sticky top-0 h-screen">
+    <div class="p-5 border-b border-white/10 flex items-center gap-3">
+      <div class="h-14 w-14 rounded-xl bg-white text-[#06452f] grid place-items-center font-black text-2xl">M</div>
+      <div><div class="text-xs uppercase tracking-[.28em] text-yellow-200">MARCOR</div><div class="text-xl font-black">Ops Mockup</div></div>
+    </div>
+    <nav id="sideNav" class="p-4 space-y-2 text-sm"></nav>
+    <div class="mt-auto p-5 border-t border-white/10 text-sm text-emerald-100/80">Manual navigation enabled. All data is realistic sample data for presentation.</div>
+  </aside>
+  <main class="flex-1 min-w-0">
+    <header class="sticky top-0 z-40 bg-[#06452f] text-white shadow-soft">
+      <div class="mobilebar hidden items-center justify-between px-4 py-3 border-b border-white/10">
+        <div class="flex items-center gap-3"><div class="h-10 w-10 rounded-lg bg-white text-[#06452f] grid place-items-center font-black">M</div><b>MARCOR</b></div>
+        <button id="menuBtn" class="btn bg-white/10 text-white">Menu</button>
+      </div>
+      <div class="px-5 sm:px-8 py-5 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+        <div><div class="text-xs uppercase tracking-[.28em] text-yellow-200">Manual Product Mockup</div><h1 class="screenTitle text-2xl sm:text-4xl font-black">Scaffolding Operations Dashboard</h1></div>
+        <div class="flex flex-wrap items-center gap-3"><div class="rounded-2xl bg-white/10 border border-white/10 px-4 py-3"><div class="text-xs text-emerald-100/80">Viewing menu</div><div id="currentViewTop" class="font-black text-yellow-200">Dashboard</div></div><a class="btn btn-gold" href="https://studio.marcor.app" target="_blank" rel="noopener noreferrer">Build in Marcor</a></div>
+      </div>
+    </header>
+    <section id="drawer" class="hidden fixed inset-0 z-50 bg-black/60"><div class="w-[88%] max-w-sm h-full bg-[#06452f] text-white p-5 overflow-y-auto"><div class="flex items-center justify-between mb-5"><b class="text-xl">MARCOR Menu</b><button id="closeMenu" class="btn bg-white/10 text-white">Close</button></div><nav id="mobileNav" class="space-y-2 text-sm"></nav></div></section>
+    <div class="content p-5 sm:p-8 space-y-6">
+      <section id="kpis" class="grid6 grid gap-4"></section>
+      <section class="panel"><div class="panel-head"><div><span id="viewTitle">Dashboard Overview</span><p id="viewDesc" class="text-xs font-normal text-emerald-100/80 mt-1">Command center for jobs, crews, sites, and delivery performance.</p></div><span class="text-xs bg-white/10 rounded-full px-3 py-1">Mockup data</span></div><div id="viewBody" class="panel-pad fade"></div></section>
+      <section class="panel"><div class="panel-head"><span>Quick Actions Preview</span><span class="text-xs bg-white/10 rounded-full px-3 py-1">Click to view mockup result</span></div><div id="quickActions" class="quickGrid grid gap-3 p-4"></div></section>
+      <section class="rounded-[28px] bg-[#06452f] text-white shadow-soft overflow-hidden"><div class="grid lg:grid-cols-[1.2fr_.8fr] gap-6 p-6 sm:p-8 lg:p-10 items-center"><div><div class="inline-flex rounded-full bg-yellow-300 text-[#06452f] px-4 py-2 text-xs font-black uppercase tracking-[.2em]">Build CTA</div><h2 class="mt-5 text-3xl sm:text-5xl font-black leading-tight">Want to Build this now?</h2><p class="mt-3 text-2xl font-black text-yellow-200">Build with confidence in Marcor.</p><p class="mt-4 max-w-3xl text-emerald-100 text-lg">Turn this business dashboard concept into a working AI-powered operations system with client portals, CRM, job tracking, reminders, reports, and automations.</p><div class="mt-7 flex flex-wrap gap-3 items-center"><a href="https://studio.marcor.app" target="_blank" rel="noopener noreferrer" class="rounded-2xl bg-yellow-300 text-[#06452f] px-6 py-4 font-black hover:bg-yellow-200 transition shadow-soft">Build in Marcor</a><span class="text-sm text-emerald-100/80">This page is a graphical software concept using realistic mockup data.</span></div></div><div class="rounded-3xl bg-white/10 border border-white/10 p-5"><div class="text-sm uppercase tracking-[.2em] text-yellow-200 font-black">Available mockup menus</div><div id="ctaMenus" class="mt-5 grid grid-cols-2 gap-3 text-sm"></div></div></div></section>
+    </div>
+    <footer class="bg-[#06452f] text-white px-5 sm:px-8 py-5 border-t border-white/10 flex flex-col sm:flex-row gap-2 sm:justify-between text-sm"><span>MARCOR Scaffolding Operations Dashboard Mockup</span><span class="text-emerald-100/70">marcor.app</span></footer>
+  </main>
 </div>
 
   <script src="script.js"></script>
