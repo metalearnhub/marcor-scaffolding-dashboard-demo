@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://metalearnhub.github.io/marcor-scaffolding-dashboard-demo/sitemap.xml
